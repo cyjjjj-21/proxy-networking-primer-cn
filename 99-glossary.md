@@ -43,6 +43,18 @@ SOCKS5:
 反向代理:
 站在服务器一侧，替后端服务接收用户请求。
 
+API Key:
+调用 API 的认证凭证，类似给程序用的钥匙。
+
+Session Cookie:
+浏览器登录态凭证，泄露后可能导致账号被冒用。
+
+计费 token:
+大模型输入输出文本的计费单位，不等于登录凭证。
+
+认证 token:
+API Key、访问令牌、Session Cookie 等身份凭证。
+
 Shadowsocks:
 轻量加密代理协议。
 
