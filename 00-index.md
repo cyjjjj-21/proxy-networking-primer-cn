@@ -1,8 +1,8 @@
 # 代理网络知识库索引
 
-更新时间：2026-05-01
+更新时间：2026-05-02
 
-这是一套以“自建 VPS + Xray + Clash Verge + 静态 ISP 代理”为主线的 Obsidian 风格笔记。这里主要解释概念、架构和排错，不包含真实服务商名称、真实 IP、账号、密码、密钥或二维码。
+这是一套以“自建 VPS + Xray + Clash Verge + 静态 ISP 代理 + 私域网络”为主线的 Obsidian 风格笔记。这里主要解释概念、架构和排错，不包含真实服务商名称、真实 IP、账号、密码、密钥或二维码。
 
 ## 示例架构
 
@@ -12,6 +12,9 @@ Clash Verge / mihomo -> 入口 VPS / Xray -> 静态 ISP 代理 SOCKS5 -> Interne
 
 移动端:
 Shadowrocket -> 入口 VPS / Xray -> Internet
+
+私域互联:
+手机 / 笔记本 / 家庭小主机 -> WireGuard / Tailscale -> 入口 VPS -> 设备互访
 ```
 
 ## 推荐阅读顺序
@@ -25,7 +28,8 @@ Shadowrocket -> 入口 VPS / Xray -> Internet
 7. [[07-leaks-trust|泄漏与信任模型：谁能看到什么]]
 8. [[08-platforms|平台控制：Mac、iPhone、Network Extension]]
 9. [[09-ops|操作与排错：检测、日志、规则、IPv6]]
-10. [[99-glossary|术语表]]
+10. [[10-private-network|私域网络：用 VPS 连接自己的设备]]
+11. [[99-glossary|术语表]]
 
 ## 一句话心智模型
 
@@ -37,6 +41,7 @@ TLS/Reality 保护连接内容和外观
 VLESS/SOCKS5 表达代理转发关系
 Xray/mihomo/Shadowrocket 按规则调度流量
 目标网站最终看到的是落地出口 IP
+WireGuard/Tailscale 把自己的设备组成加密私域网
 ```
 
 ## 快速查找
@@ -57,3 +62,5 @@ Xray/mihomo/Shadowrocket 按规则调度流量
 - 想理解本地 dev server 为什么也有 IP 和端口：[[01-network-basics#本地开发为什么也有 IP 和端口]]
 - 想理解 IPv6 怎么防漏：[[07-leaks-trust#IPv6 泄漏]]
 - 想理解 VPS IP 被墙不等于自己做坏事：[[03-vps#VPS IP 被墙是什么意思]]
+- 想理解 VPS 怎么做私域网锚点：[[10-private-network#为什么 VPS 适合做公网锚点]]
+- 想理解私域网和代理链怎么隔离：[[10-private-network#和代理链路怎么隔离]]

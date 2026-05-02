@@ -25,6 +25,12 @@ TCP:
 UDP:
 轻量数据报协议。
 
+WireGuard:
+现代加密组网协议，常用于把多台设备组成私域网络。
+
+Tailscale:
+基于 WireGuard 的组网产品，提供账号、设备发现和 NAT 穿透等便利能力。
+
 TLS:
 加密连接层。
 
@@ -90,6 +96,15 @@ Xray 出站出口。
 
 Routing:
 Xray 分流规则。
+
+私域网络:
+只给自己的设备使用的加密虚拟内网。
+
+Peer:
+WireGuard 里的一个设备节点。
+
+AllowedIPs:
+WireGuard 路由字段，决定哪些目标网段走隧道。
 
 中转:
 流量经过但不是最终出口的节点。
