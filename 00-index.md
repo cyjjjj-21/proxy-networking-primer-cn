@@ -47,6 +47,7 @@ Xray/mihomo/Shadowrocket 按规则调度流量
 - 想理解被墙不等于自己做坏事：[[03-vps#VPS IP 被墙是什么意思]]
 - 想理解为什么前半段用 VLESS、后半段用 SOCKS5：[[04-proxy-protocols#为什么示例前半段用 VLESS 后半段用 SOCKS5]]
 - 想理解反向代理 Token 骗局：[[04-proxy-protocols#反向代理和 Token 骗局]]
+- 想理解反代和正代的信息差：[[04-proxy-protocols#为什么第三方反代更像“骗用户信任”正向代理更像“隐藏用户来源”]]
 - 想理解 Xray 是不是交换机：[[05-xray-routing#Xray 像代理交换机]]
 - 想理解 Clash 规则是否合理：[[09-ops#示例 Clash 规则为什么合理]]
 - 想理解 TUN 是否能兜住一切：[[06-clients#TUN 不是绝对结界]]
